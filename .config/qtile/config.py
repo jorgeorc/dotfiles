@@ -214,7 +214,7 @@ extension_defaults = widget_defaults.copy()
 screens = [
     Screen(
         wallpaper=os.path.join(
-            os.path.expanduser("~"), ".config/qtile/wallpapers/fedora-night.jpg"
+            os.path.expanduser("~"), ".config/qtile/wallpapers/gruvbox.png"
         ),
         wallpaper_mode="fill",
         top=bar.Bar(
