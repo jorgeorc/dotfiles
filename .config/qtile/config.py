@@ -179,57 +179,57 @@ for i in groups:
     )
 
 # Theme Dracula
-color = myColors.Monokai
+color = myColors.RosePine
 
 layout_theme = {
-    "border_width": 2,
-    "margin": 2,
-    "border_focus": color["blue"],
-    "border_normal": color["dark"],
+"border_width": 2,
+"margin": 0,
+"border_focus": color["blue"],
+"border_normal": color["dark"],
 }
 layouts = [
-    layout.Columns(**layout_theme),
-    layout.Max(),
-    # Try more layouts by unleashing below layouts.
-    # layout.Stack(num_stacks=2),
-    # layout.Bsp(),
-    # layout.Matrix(),
-    # layout.MonadTall(),
-    # layout.MonadWide(),
-    # layout.RatioTile(),
-    # layout.Tile(),
-    # layout.TreeTab(),
-    # layout.VerticalTile(),
-    # layout.Zoomy(),
+layout.Columns(**layout_theme),
+layout.Max(),
+# Try more layouts by unleashing below layouts.
+# layout.Stack(num_stacks=2),
+# layout.Bsp(),
+# layout.Matrix(),
+# layout.MonadTall(),
+# layout.MonadWide(),
+# layout.RatioTile(),
+# layout.Tile(),
+# layout.TreeTab(),
+# layout.VerticalTile(),
+# layout.Zoomy(),
 ]
 
 widget_defaults = dict(
-    font="NotoSans Nerd Font Propo 13",
-    fontsize=18,
-    padding=3,
-    background=color["dark"],
+font="NotoSans Nerd Font Propo 13",
+fontsize=18,
+padding=3,
+background=color["dark"],
 )
 extension_defaults = widget_defaults.copy()
 
 screens = [
-    Screen(
-        wallpaper=os.path.join(
-            os.path.expanduser("~"), ".config/qtile/wallpapers/gruvbox.png"
-        ),
-        wallpaper_mode="fill",
-        top=bar.Bar(
-            [
-                # GroupBox widget with custom colors
-                widget.GroupBox(
-                    margin_y=3,
-                    margin_x=0,
-                    padding=5,
-                    borderwidth=3,
-                    active=color["green"],  # Color of active group
-                    inactive=color["red"],  # Color of inactive groups
-                    rounded=True,
-                    highlight_method="block",
-                    this_current_screen_border=color["gray"],  # Border color for the current screen
+Screen(
+    wallpaper=os.path.join(
+        os.path.expanduser("~"), ".config/qtile/wallpapers/wall.png"
+    ),
+    wallpaper_mode="fill",
+    top=bar.Bar(
+        [
+            # GroupBox widget with custom colors
+            widget.GroupBox(
+                margin_y=3,
+                margin_x=0,
+                padding=5,
+                borderwidth=3,
+                active=color["yellow"],  # Color of active group
+                inactive=color["magenta"],  # Color of inactive groups
+                rounded=True,
+                highlight_method="block",
+                this_current_screen_border=color["gray"],  # Border color for the current screen
                     this_screen_border=color["gray"],  # Border color for this screen
                     other_current_screen_border=color["yellow"],  # Border color for other screens
                     other_screen_border=color["red"],  # Border color for other screens
@@ -237,31 +237,31 @@ screens = [
                 widget.Sep(
                     linewidth=1,
                     padding=10,
-                    foreground=color["light"],  # Color del separador
+                    foreground=color["magenta"],  # Color del separador
                     background=color["dark"],  # Fondo oscuro del separador
                 ),
                 widget.WindowName(
-                    foreground=color["light"],
+                    foreground=color["magenta"],
                 ),
                 widget.CurrentLayout(
-                    foreground=color["dark"], background=color["green"]
+                    foreground=color["dark"], background=color["yellow"]
                 ),
                 widget.Systray(foreground=color["dark"], background=color["blue"]),
                 widget.Volume(foreground=color["dark"], background=color["blue"]),
                 widget.Clock(
                     format="%Y/%m/%d %a %I:%M %p",
                     foreground=color["dark"],
-                    background=color["gray"],
+                    background=color["magenta"],
                 ),
                 widget.TextBox(
                     text="󰔛",
                     foreground=color["dark"],
-                    background=color["gray"],
+                    background=color["magenta"],
                 ),
                 widget.Sep(
                     linewidth=0,
                     padding=5,
-                    background=color["gray"],
+                    background=color["magenta"],
                 ),
                 widget.QuickExit(foreground=color["dark"], background=color["red"]),
             ],

@@ -1,0 +1,15 @@
+/* ROUNDED THEME FOR ROFI - Rosé Pine Moon */
+/* Adaptado por ChatGPT basado en el trabajo de Newman Sanchez */
+
+* {
+    bg0:    #232136F2; /* Base - fondo principal */
+    bg1:    #2a273f;   /* Surface - fondo secundario */
+    bg2:    #39355280; /* Overlay con opacidad */
+    bg3:    #286983F2; /* Highlight / accentuado */
+    fg0:    #e0def4;   /* Textos principales */
+    fg1:    #f5f5f5;   /* Blanco suave */
+    fg2:    #908caa;   /* Comentarios / texto tenue */
+    fg3:    #393552;   /* Contraste de fondo */
+}
+
+@import "template/rounded-template.rasi"
