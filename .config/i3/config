@@ -185,8 +185,8 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 
 # Gaps size
-gaps inner 6
-gaps outer 6
+gaps inner 2
+gaps outer 2
 
 # Set wallpaper
 exec --no-startup-id feh --bg-scale "$HOME/Pictures/wallpapers/tokyonight.png"
