@@ -184,6 +184,10 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
+# Gaps size
+gaps inner 6
+gaps outer 6
+
 # Set wallpaper
 exec --no-startup-id feh --bg-scale "$HOME/Pictures/wallpapers/tokyonight.png"
 
