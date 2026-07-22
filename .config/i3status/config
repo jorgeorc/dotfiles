@@ -1,0 +1,33 @@
+order += "wireless _first_"
+order += "ethernet _first_"
+order += "battery all"
+order += "memory"
+order += "disk /"
+order += "cpu_temperature 0"
+order += "load"
+order += "tztime local"
+
+wireless _first_ {
+    format_up = "󰖩 %essid"
+    format_down = "󰖪"
+}
+
+memory {
+    format = "RAM %used"
+}
+
+disk "/" {
+    format = "SSD %avail"
+}
+
+cpu_temperature 0 {
+    format = "%degrees°C"
+}
+
+load {
+    format = "CPU %1min"
+}
+
+tztime local {
+    format = "%Y-%m-%d %H:%M"
+}
