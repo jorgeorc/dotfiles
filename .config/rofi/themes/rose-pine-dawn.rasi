@@ -1,0 +1,12 @@
+* {
+	bg: #faf4ed;
+	cur: #fffaf3;
+	fgd: #575279;
+	cmt: #9893a5;
+	cya: #56949f;
+	blu: #286983;
+	ora: #d7827e;
+	pur: #907aa9;
+	red: #b4637a;
+	yel: #ea9d34;
+}
