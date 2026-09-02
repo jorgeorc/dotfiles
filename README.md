@@ -1,5 +1,7 @@
 # My Arch Linux dotfiles
 
+![Desktop screenshot](Pictures/screenshots/desktop_screenshot.png)
+
 ## Required packages
 ### Audio
 ```bash
